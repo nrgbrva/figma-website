@@ -244,14 +244,14 @@ button {
 }
 
 /* radio btns */
-#checkout>div>div:nth-child(2) {
+/* #checkout>div>div:nth-child(2) {
     display: flex;
     align-items: center;
     width: 1170px;
     height: 80px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-}
+} */
 
 .tab-s {
     background: linear-gradient(238.66deg, #0283E9 -18.13%, #FC01CA 120.27%);
@@ -477,7 +477,7 @@ button {
 
 .circle {
     position: absolute;
-    left: 70%;
+    left: 55%;
     top: -10%;
     z-index: -1;
     width: 805px;
@@ -539,4 +539,22 @@ color: gray;}
 }
 #cards{
     margin-top: 130px !important;
+}
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+}
+input[type=radio]:checked + label { 
+   background-image: none;
+   background: linear-gradient(238.66deg, #0283E9 -18.13%, #FC01CA 120.27%);
 }
